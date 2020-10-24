@@ -13,7 +13,6 @@
   "author": "SkiloZ#0212",
   "license": "MIT",
   "dependencies": {
-    "config": "^3.3.1",
     "discord.js": "^11.6.4",
     "fs": "0.0.1-security",
     "ms": "^2.1.2"
