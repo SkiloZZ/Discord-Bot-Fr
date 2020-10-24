@@ -4,11 +4,11 @@ module.exports.run = async (client, message) => {
     const member = message.mentions.members.first()
     
     if (!member) {
-    return message.reply(`Il faut que tu mentionnes une personne.`)
+    return message.reply(`il faut que tu mentionnes une personne.`)
     }
-    if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("Vous n'avez pas la permission de bannir.")
+    if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("tu n'as pas la permission de bannir.")
     if (!member.bannable) {
-    return message.reply(`Je ne peux pas ban ce membre,desolé.`)
+    return message.reply(`je ne peux pas ban ce membre,desolé.`)
     }
     return member
     .ban()
