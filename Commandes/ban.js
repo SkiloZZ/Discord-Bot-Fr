@@ -13,7 +13,7 @@ module.exports.run = async (client, message) => {
     return member
     .ban()
     .then(() => message.reply(`${member.user.tag} a été ban.`))
-    .catch(error => message.reply("Une erreur s'est produite."))
+    .catch(error => message.reply("une erreur s'est produite."))
 }
   
   module.exports.help = {
