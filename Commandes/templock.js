@@ -1,12 +1,12 @@
 const ms = require('ms');
 exports.run = (client, message, args) => {
   if(!message.member.hasPermission("ADMINISTRATOR")) 
-  return message.reply("Vous n'avez pas la permission admin.")
+  return message.reply("tu n'as pas la permission admin.")
 
   if (!client.lockit) client.lockit = [];
   const time = args.join(' ');
   const validUnlocks = ['release', 'unlock'];
-  if (!time) return message.reply('Vous devez fixer la durée du verouillage temporaire en heures, minutes, ou secondes.');
+  if (!time) return message.reply('tu dois fixer la durée du verouillage temporaire en heures, minutes, ou secondes.');
 
   if (validUnlocks.includes(time)) {
     message.channel.overwritePermissions(message.guild.id, {
