@@ -2,8 +2,8 @@ const Discord = require("discord.js")
 
 module.exports.run = (client, message, args) => {
     const embed = new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setDescription('Vous ne pouvez pas m\'utiliser pour mentionner tout les membres du serveur.')
+        .setColor("RED")
+        .setDescription('Tu ne peux pas m\'utiliser pour @everyone/@here.')
 
     if (!message.guild.member(message.author).hasPermission('ADMINISTRATOR') && message.content.includes('@everyone')) {
         return message.channel.send(embed);
