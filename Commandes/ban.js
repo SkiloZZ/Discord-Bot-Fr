@@ -8,7 +8,7 @@ module.exports.run = async (client, message) => {
     }
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("Vous n'avez pas la permission de bannir.")
     if (!member.bannable) {
-    return message.reply(`Je ne peux pas ban se membre,desolé.`)
+    return message.reply(`Je ne peux pas ban ce membre,desolé.`)
     }
     return member
     .ban()
